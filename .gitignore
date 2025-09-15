@@ -1,0 +1,33 @@
+# General - For any environment
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# VS Code specific
+.vscode/
+tempCodeRunnerFile.py
+
+# Data folder at the root
+/data/
+
+# ----------------------------------------------------
+
+# Frontend specific ignores (inside the 'frontend' folder)
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env
+/backend/.env
+/backend/node_modules/
+
+# ----------------------------------------------------
+
+# Python / ML Services specific ignores (inside the 'ml-services' folder)
+/ml-services/venv/
+/ml-services/__pycache__/
+/ml-services/.env
+
+# Optional: Uncomment the line below if your models are large files 
+# that should not be tracked in git.
+# /ml-services/models/
